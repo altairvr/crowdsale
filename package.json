@@ -1,0 +1,25 @@
+{
+  "name": "altair",
+  "version": "1.0.0",
+  "description": "altair crowdsale smart-contracts",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "ganache-cli -a 100 -l 7996921",
+    "test": "./test/tests.sh",
+    "compile": "rimraf build/ && truffle compile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.0.2",
+    "chai-as-promised": "^7.0.0",
+    "chai-bignumber": "^2.0.0",
+    "dotenv": "^4.0.0",
+    "rimraf": "^2.6.2",
+    "truffle": "^4.0.4",
+    "zeppelin-solidity": "^1.5.0"
+  }
+}
